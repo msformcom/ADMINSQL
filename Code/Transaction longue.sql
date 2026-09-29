@@ -1,0 +1,8 @@
+CREATE TABLE Nombres(
+N Int)
+INSERT INTO Nombres VALUES(1)
+
+
+
+BEGIN TRAN
+UPDATE Nombres SET N=2
