@@ -34,7 +34,7 @@ $Results = @()
 for ($i = 1; $i -le $TotalSamples; $i++) {
     $Timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
     
-    $CounterData = Get-Counter -Counter $Counters -ErrorAction SilentlyContinue
+    $CounterData = Get-Counter -Counter $Counters 
     
     foreach ($TimeSeries in $CounterData.CounterSamples) {
         $Results += [PSCustomObject]@{
